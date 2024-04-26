@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    transition: 1s;
+  }
+  
+  body {
+    background-color: rgba(73, 78, 84, 255);
+    scroll-behavior: smooth;
+    font-family: "Rubik", sans-serif;
+  }
+  .heading {
+    font-size: 3rem;
+    text-align: center;
+    padding: 8px;
+    background-color: rgba(48, 173, 107, 255);
+    color: rgba(41, 44, 48, 255);
+  }
+  /* .container{
+      background-color: red;
+      width: 30vw;
+      height: 40vw;
+  } */
+  
+  .calculator {
+    height: 42vw;
+    width: 24vw;
+  
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 0.4vw;
+    /* border-radius: 3rem 3rem 3rem 3rem; */
+  }
+  
+  .screen {
+    width: 100%;
+    height: 30%;
+    background-color: rgba(41, 44, 48, 255);
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+  }
+  .container {
+    width: 100%;
+    height: 70%;
+    background-color: rgba(41, 44, 48, 255);
+    display: grid;
+  
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 0 0 1rem 1rem;
+  }
+  
+  .container .number:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    /* transition: .3s; */
+  }
+  
+  #text {
+    color: white;
+    font-size: 55px;
+    text-align: end;
+    /* justify-content: end; */
+    align-items: end;
+    padding-top: 7rem;
+    padding-right: 1rem;
+  }
+  .items {
+    margin: 5px;
+    border-radius: 0.6rem;
+    font-size: 2rem;
+  }
+  
+  .items:hover {
+    cursor: pointer;
+  }
+  
+  .zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .operator {
+    background-color: rgba(48, 173, 107, 255);
+    color: white;
+  }
+  .number {
+    background-color: rgba(50, 53, 56, 255);
+    color: white;
+  }
+  
+  .extra_btns {
+    margin: 5px;
+    border-radius: 0.6rem;
+    font-size: 25px;
+  }
+  .extra_btns:hover {
+    cursor: pointer;
+    background-color: rgba(50, 53, 56, 255);
+    color: white;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .calculator {
+      height: 40rem;
+      width: 80%;
+      margin: auto;
+      margin-top: 4vw;
+    }
+  }
+  @media screen and (max-width: 780px) and (min-width:481px) {
+    .calculator {
+      height: 40rem;
+      width: 50%;
+      margin: auto;
+      margin-top: 2vw;
+    }
+  }
+  
+  
