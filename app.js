@@ -55,4 +55,3 @@ AC_btn.addEventListener("click", () => {
 })
 
 
-67
