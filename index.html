@@ -5,40 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/calculator.png" type="image/x-icon">
 </head>
 
 <body>
     <h4 class="heading">Calculator</h4>
-    <div class="calculator">
+    <section class="container">
         <div class="screen">
             <p id="text"></p>
         </div>
-        <div class="container">
-            <button class="extra_btns AC_btn" value="ac">C</button>
-            <button class="extra_btns" id="delete_button"><img src="/backspace.svg" alt="" style="width: 40px; height: 40px;"> </button>
-            <button class="extra_btns">%</button>
-            <button class="items operator" value="/">÷</button>
-            <button class="items number" value="7">7</button>
-            <button class="items number" value="8">8</button>
-            <button class="items number" value="9">9</button>
-            <button class="items operator" value="*">*</button>
-            <button class="items number" value="4">4</button>
-            <button class="items number" value="5">5</button>
-            <button class="items number" value="6">6</button>
-            <button class="items operator" value="-">-</button>
-            <button class="items number" value="1">1</button>
-            <button class="items number" value="2">2</button>
-            <button class="items number" value="3">3</button>
-            <button class="items operator" value="+">+</button>
-            <button class="items zero number" value="0">0</button>
-            <button class="items number" value=".">.</button>
-            <button class="items operator" id="exx" value="=">=</button>
+        <div class="keyboard">
+            <button class="AC_btn" value="ac">AC</button>
+            <button id="delete_button">&#x2190;</button>
+            <button class="items" value="%">%</button>
+            <button value="/">&#xf7;</button>
+            <button class="back items" value="7">7</button>
+            <button class="back items" value="8">8</button>
+            <button class="back items" value="9">9</button>
+            <button class="items" value="*">&#xd7;</button>
+            <button class="back items" value="4">4</button>
+            <button class="back items" value="5">5</button>
+            <button class="back items" value="6">6</button>
+            <button class="items" value="-">&#x2212;</button>
+            <button class="back items" value="1">1</button>
+            <button class="back items" value="2">2</button>
+            <button class="back items" value="3">3</button>
+            <button class="items" value="+">+</button>
+            <button class="back items" value="0">0</button>
+            <button class="back items" value=".">.</button>
+            <button class="back" id="exx" value="=">&#x3d;</button>
         </div>
-    </div>
-
+    </section>
     <script src="app.js"></script>
 </body>
 

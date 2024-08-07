@@ -29,8 +29,8 @@ delButton.addEventListener('click', () => {
 
 numbers.forEach((number) => {
     number.addEventListener("click", () => {
-
-        let x = number.innerText;
+        console.log(number.value)
+        let x = number.value;
         arr.push(x);
 
         let expp = arr.join("");
