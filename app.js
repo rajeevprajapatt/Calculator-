@@ -42,10 +42,6 @@ numbers.forEach((number) => {
             display.innerText = `${result}`;
             arr.length = 0;
         })
-        if (arr.length > 13) {
-            display.innerText = "Out of range";
-            arr.length = 0;
-        }
     })
 })
 

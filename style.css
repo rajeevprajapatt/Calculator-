@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -6,9 +8,9 @@
 }
 
 body {
-  background-color: #b69dd3;
+  background-color: #ffb178;
   scroll-behavior: smooth;
-  font-family: "Rubik", sans-serif;
+  font-family: "Signika Negative", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +21,8 @@ body {
   font-size: 3rem;
   text-align: center;
   width: 100%;
-  color: whitesmoke;
-  background: linear-gradient(to bottom right, #493ab3, #ca67ab);
+  color: #ed802e;
+  background-color: #243441;
   padding: 0.5rem 0;
 }
 .container {
@@ -33,35 +35,40 @@ body {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .screen {
-  height: 3rem;
+  color: grey;
+  height: 4rem;
   font-size: 3rem;
   text-align: end;
-  padding-top: 5rem;
+  padding-top: 7rem;
   padding-right: 0.7rem;
   padding-bottom: 0.3rem;
   border-radius: 1rem 1rem 0 0;
-  background: linear-gradient(to bottom right, #493ab3, #ca67ab);
+  background-color: #243441;
+  overflow: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 .keyboard {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: linear-gradient(to bottom right, #493ab3, #ca67ab);
+  background-color: #243441;
   border-radius: 0 0 1rem 1rem;
 }
 .keyboard button {
+  font-family: "Signika Negative", sans-serif;
   cursor: pointer;
   color: whitesmoke;
   font-size: 2rem;
   border-radius: 0.5rem;
   padding: 0.8rem;
   margin: 0.5rem;
-}
-.back {
-  background: #936eb9;
+  color: #ed802e;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-#exx{
+#exx {
   grid-column-start: 3;
   grid-column-end: 5;
 }
-
